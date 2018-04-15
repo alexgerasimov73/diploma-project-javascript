@@ -309,6 +309,8 @@ const actorDict = {
     '|': VerticalFireball
   }
 
+//Для запуска игры на локальном сервере раскомментируйте код. Строки 314 - 317 и закомментируйте строки 319 - 418
+
 /*const parser = new LevelParser(actorDict);
 loadLevels()
   .then(schemas => runGame(JSON.parse(schemas), parser, DOMDisplay))
