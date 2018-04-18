@@ -188,7 +188,7 @@ class LevelParser {
 	}
 
 	createGrid(staticObjects) {
-		return staticObjects.map((el) => el.split('').map((el) => this.obstacleFromSymbol(el)));
+		return staticObjects.map(el => el.split('').map(el => this.obstacleFromSymbol(el)));
 	}
 
 	createActors(movingObjects) {
