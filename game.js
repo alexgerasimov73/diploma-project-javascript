@@ -139,9 +139,8 @@ class Level {
 	}
 
 	noMoreActors(objectType) {
-		if ((this.actors.findIndex((el) => el.type === objectType) === -1) ||
-			(this.actors === undefined)) {
-				return true;
+		if (this.actors.findIndex(el => el.type === objectType) === -1)  {
+			return true;
 		}
 		else {
 			return false;
@@ -338,17 +337,17 @@ const actorDict = {
 	'=': HorizontalFireball,
 	'o': Coin,
 	'|': VerticalFireball
-  }
+	}
 
 //Для запуска игры на локальном сервере раскомментируйте код. Строки 314 - 317 и закомментируйте строки 319 - 418
 
 /*const parser = new LevelParser(actorDict);
 loadLevels()
-  .then(schemas => runGame(JSON.parse(schemas), parser, DOMDisplay))
-  .then(() => alert('Вы выиграли приз!'));*/
+	.then(schemas => runGame(JSON.parse(schemas), parser, DOMDisplay))
+	.then(() => alert('Вы выиграли приз!'));*/
 
 const schemas = [
-  [
+	[
 	"     v                 ",
 	"                       ",
 	"                       ",
@@ -363,8 +362,8 @@ const schemas = [
 	"      x!!!!!!!!!!!!!x  ",
 	"      xxxxxxxxxxxxxxx  ",
 	"                       "
-  ],
-  [
+	],
+	[
 	"     v                 ",
 	"                       ",
 	"                       ",
@@ -379,8 +378,8 @@ const schemas = [
 	"      x!!!!!!!!!!!!!x  ",
 	"      xxxxxxxxxxxxxxx  ",
 	"                       "
-  ],
-  [
+	],
+	[
 	"        |           |  ",
 	"                       ",
 	"                       ",
@@ -396,8 +395,8 @@ const schemas = [
 	" @ |  o            o   ",
 	"xxxxxxxxx!!!!!!!xxxxxxx",
 	"                       "
-  ],
-  [
+	],
+	[
 	"                       ",
 	"                       ",
 	"                       ",
@@ -416,7 +415,7 @@ const schemas = [
 	" @                     ",
 	"xxx                    ",
 	"                       "
-  ], [
+	], [
 	"   v         v",
 	"              ",
 	"         !o!  ",
@@ -441,10 +440,10 @@ const schemas = [
 	"      x       ",
 	"   xx         ",
 	"              "
-  ]
+	]
 ];
 
 const parser = new LevelParser(actorDict);
 runGame(schemas, parser, DOMDisplay)
-  .then(() => alert('Вы выиграли!'));
+	.then(() => alert('Вы выиграли!'));
 
