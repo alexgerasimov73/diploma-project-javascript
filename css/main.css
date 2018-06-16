@@ -3,7 +3,7 @@ hidden {
 }
 
 .background {
-  background: rgb(52, 166, 251);
+  background: rgb(99, 133, 251);
   table-layout: fixed;
   border-spacing: 0;
 }
@@ -13,11 +13,13 @@ hidden {
 }
 
 .fireball {
-  background: rgb(255, 100, 100);
+  background-size: 100%;
+  background-image: url(../img/fireball.gif);
 }
 
 .lava {
-  background: rgb(255, 100, 100);
+  background-size: 100%;
+  background-image: url(../img/lava.gif);
 }
 
 .elevator {
@@ -25,7 +27,8 @@ hidden {
 }
 
 .wall {
-  background: white;
+  background-size: 100%;
+  background-image: url(../img/wall.png);
 }
 
 .actor {
@@ -33,19 +36,23 @@ hidden {
 }
 
 .coin {
-  background: rgb(241, 229, 89);
+  background-size: 100%;
+  background-image: url(../img/coin.gif);
 }
 
 .player {
-  background: rgb(64, 64, 64);
+  background-size: 100%;
+  background-image: url(../img/mario.png);
 }
 
 .lost .player {
-  background: rgb(160, 64, 64);
+  background-size: 100%;
+  background-image: url(../img/mario-lose.png);
 }
 
 .won .player {
-  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+  background-size: 100%;
+  background-image: url(../img/mario-win.png);
 }
 
 .game {
